@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.19;
 
-// import {LibRNG} from '../../lib/@lagunagames/cu-common/src/libraries/LibRNG.sol';
+// import {LibRNG} from '../../lib/cu-common/src/libraries/LibRNG.sol';
 
 interface IVRFCallback {
     /// @notice Callback for VRF fulfillRandomness

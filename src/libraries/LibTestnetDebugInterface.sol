@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.19;
 
-import {LibContractOwner} from "../../lib/@lagunagames/cu-diamond-template/src/libraries/LibContractOwner.sol";
+import {LibContractOwner} from "../../lib/cu-osc-diamond-template/src/libraries/LibContractOwner.sol";
 import {ITestnetDebugRegistry} from "../interfaces/ITestnetDebugRegistry.sol";
 import {LibResourceLocator} from "./LibResourceLocator.sol";
 

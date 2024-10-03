@@ -1,6 +1,6 @@
 //SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.19;
-import {LibContractOwner} from "../../lib/@lagunagames/cu-diamond-template/src/libraries/LibContractOwner.sol";
+import {LibContractOwner} from "../../lib/cu-osc-diamond-template/src/libraries/LibContractOwner.sol";
 import {LibGasReturner} from "../libraries/LibGasReturner.sol";
 
 contract GasReturnerFacet {

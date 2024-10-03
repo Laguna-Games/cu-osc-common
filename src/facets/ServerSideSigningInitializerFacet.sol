@@ -2,7 +2,7 @@
 pragma solidity 0.8.19;
 
 import {LibServerSideSigning} from "../libraries/LibServerSideSigning.sol";
-import {LibContractOwner} from "../../lib/@lagunagames/cu-diamond-template/src/libraries/LibContractOwner.sol";
+import {LibContractOwner} from "../../lib/cu-osc-diamond-template/src/libraries/LibContractOwner.sol";
 
 /// @title SSS Initializer facet for Crypto Unicorns
 /// @author rsampson@laguna.games

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.19;
 
-import {IERC165} from "../../lib/@lagunagames/cu-diamond-template/src/interfaces/IERC165.sol";
+import {IERC165} from "../../lib/cu-osc-diamond-template/src/interfaces/IERC165.sol";
 import {IResourceLocator} from "../interfaces/IResourceLocator.sol";
 
 /// @title LG Resource Locator Library

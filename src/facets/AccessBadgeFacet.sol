@@ -3,7 +3,7 @@ pragma solidity 0.8.19;
 
 import {IResourceLocator} from "../interfaces/IResourceLocator.sol";
 import {LibAccessBadge} from "../libraries/LibAccessBadge.sol";
-import {LibContractOwner} from "../../lib/@lagunagames/cu-diamond-template/src/libraries/LibContractOwner.sol";
+import {LibContractOwner} from "../../lib/cu-osc-diamond-template/src/libraries/LibContractOwner.sol";
 
 /// @title Access Badge Admin facet for Crypto Unicorns
 /// @author rsampson@laguna.games
