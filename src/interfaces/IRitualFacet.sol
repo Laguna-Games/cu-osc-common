@@ -48,4 +48,15 @@ interface IRitualFacet {
         uint256 ritualId,
         address ritualOwner
     ) external view returns (LibRitualData.Ritual memory);
+
+    /// @notice This function returns the maximum amount of charges a ritual can have.
+    /// @param ritualId The id of the ritual.
+    /// @return The maximum amount of charges.
+    function getMaxChargesByRitualId(
+        uint256 ritualId
+    ) external view returns (uint256);
+
+    /// @notice This function burns rituals and deletes the max charges for them.
+    /// @param ritualId The id of the ritual.
+    function recycleRitualCharges(uint256 ritualId) external;
 }
