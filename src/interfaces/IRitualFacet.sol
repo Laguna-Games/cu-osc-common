@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.19;
 
-import {LibRitualComponents} from '../libraries/LibRitualComponents.sol';
-import {LibConstraints} from '../libraries/LibConstraints.sol';
-import {LibRitualData} from '../libraries/LibRitualData.sol';
+import {LibRitualComponents} from "../libraries/LibRitualComponents.sol";
+import {LibConstraints} from "../libraries/LibConstraints.sol";
+import {LibRitualData} from "../libraries/LibRitualData.sol";
 
 interface IRitualFacet {
     /// @notice This function creates a ritual and mints it to the target user,
@@ -30,7 +30,9 @@ interface IRitualFacet {
     /// @notice This function returns the entire ritual data that is relevant for the minion hatchery.
     /// @param ritualId The id of the ritual.
     /// @return Ritual (name, rarity, costs, products, constraints, charges and soulbound).
-    function getRitualDetails(uint256 ritualId) external view returns (LibRitualData.Ritual memory);
+    function getRitualDetails(
+        uint256 ritualId
+    ) external view returns (LibRitualData.Ritual memory);
 
     /// @notice This function consumes a ritual charge, can only be called by minion hatchery.
     /// @param ritualId The id of the ritual.
@@ -46,13 +48,4 @@ interface IRitualFacet {
         uint256 ritualId,
         address ritualOwner
     ) external view returns (LibRitualData.Ritual memory);
-
-    /// @notice This function returns the maximum amount of charges a ritual can have.
-    /// @param ritualId The id of the ritual.
-    /// @return The maximum amount of charges.
-    function getMaxChargesByRitualId(uint256 ritualId) external view returns (uint256);
-
-    /// @notice This function burns rituals and deletes the max charges for them.
-    /// @param ritualId The id of the ritual.
-    function recycleRitualCharges(uint256 ritualId) external;
 }
